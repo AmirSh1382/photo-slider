@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-container{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    top: 80px;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+}
+
+.btn-container{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 7px;
+    transition: 0.3s;
+}
+
+.btn-container:nth-last-of-type(1){
+    left: 0;
+}
+
+.btn-container:nth-last-of-type(2){
+    right: 0;
+}
+
+.btn-container:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-container i{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-container i:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
